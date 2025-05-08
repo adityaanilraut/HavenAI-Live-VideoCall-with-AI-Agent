@@ -1,6 +1,7 @@
 # HavenAI-Live-VideoCall-with-AI-Agent
 
 A real-time video chat application that uses Google's Gemini Flash model for conversations and renders the AI's responses through a HeyGen AI avatar.
+![ScreenShot](screen-capture.jpeg)
 
 ## Features
 
