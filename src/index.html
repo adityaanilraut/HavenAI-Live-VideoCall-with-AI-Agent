@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini-HeyGen Video Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- LiveKit Client for HeyGen Streaming -->
+    <script src="https://cdn.jsdelivr.net/npm/livekit-client/dist/livekit-client.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Video Chat with AI</h1>
+        </header>
+        
+        <main>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <h3>You</h3>
+                    <video id="local-video" autoplay muted playsinline></video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>Gemini </h3>
+                    <video id="remote-video" autoplay playsinline></video>
+                </div>
+            </div>
+
+            <div class="heygen-config">
+                <div class="config-row">
+                    <input
+                        id="avatarID"
+                        type="text"
+                        placeholder="Avatar ID"
+                        value="Wayne_20240711"
+                        class="config-input"
+                    />
+                    <input
+                        id="voiceID"
+                        type="text"
+                        placeholder="Voice ID"
+                        class="config-input"
+                    />
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="mic-btn" class="control-btn">
+                    <span class="on">Mic On</span>
+                    <span class="off">Mic Off</span>
+                </button>
+                <button id="video-btn" class="control-btn">
+                    <span class="on">Video On</span>
+                    <span class="off">Video Off</span>
+                </button>
+                <button id="voice-btn">
+                    <span>🎤</span>
+                </button>
+                <button id="start-call-btn" class="action-btn">Start Call</button>
+                <button id="end-call-btn" class="action-btn">End Call</button>
+            </div>
+            
+            <div class="conversation">
+                <div id="conversation-container"></div>
+                <div class="message-input">
+                    <input type="text" id="message-input" placeholder="Type a message or press space to speak...">
+                    <button id="send-btn">Send</button>
+                    <button id="voice-btn">
+                        <span>🎤</span>
+                    </button>
+                    <!--<button id="talk-btn" class="llm-btn">Talk (LLM)</button>-->
+                    <button id="repeat-btn" class="llm-btn">Repeat</button>
+                </div>
+            </div>
+
+            <div id="status-container" class="status-container"></div>
+        </main>
+        
+        <footer>
+            <p>Powered by Aditya Anil Raut</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html> 
