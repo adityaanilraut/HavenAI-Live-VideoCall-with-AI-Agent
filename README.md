@@ -2,6 +2,7 @@
 
 A real-time video chat application that uses Google's Gemini Flash model for conversations and renders the AI's responses through a HeyGen AI avatar.
 ![ScreenShot](screen-capture.jpeg)
+[DEMO](https://youtu.be/m4nxs2xv11c?si=Q88_pVZr4URPRzV6)
 
 ## Features
 
